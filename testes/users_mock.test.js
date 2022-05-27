@@ -4,7 +4,6 @@ const Utils = require('../src/utils/utils');
 const UsersRepository = require('../src/port/users_repository');
 
 jest.mock('../src/port/users_repository')
-jest.mock('../src/utils/utils');
 
 test('CREATE - Dado válido', async () => {
   const data = {
