@@ -3,19 +3,19 @@ const validation = require('../src/utils/validation');
 
 test('Caso Válido', () => {
       const result = validation.create({
-        nome: "Steve Rogers",
-        origem: "Soro",
-        forca: "Forte",
-        poder: "Super Humano"
+        nome: "everything i wanted",
+        ano: 2019,
+        nomeBanda: "Billie Eilish",
+        genero: "Pop"
       });
       expect(result).toEqual(undefined);
 });
 
 test('Caso Inválido - Sem o nome', () => {
   const result = validation.create({
-    origem: "Soro",
-    forca: "Forte",
-    poder: "Super Humano"
+    ano: 2019,
+    nomeBanda: "Billie Eilish",
+    genero: "Pop"
   });
   expect(result.name).toEqual(Constants.ErrorValidation.name);
 });
