@@ -1,5 +1,5 @@
 const validate = require('validate.js');
-const Constants = require('./constants');
+const Constants = require('./Constants');
 const Constraints = require('./users_validation');
 
 const Validation = {
