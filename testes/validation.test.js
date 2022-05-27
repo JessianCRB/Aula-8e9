@@ -1,4 +1,4 @@
-const Constants = require('../src/utils/Constants');
+const Constants = require('../src/utils/constants');
 const validation = require('../src/utils/validation');
 
 test('Caso Válido', () => {

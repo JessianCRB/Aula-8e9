@@ -1,5 +1,5 @@
 const Utils = require('../src/utils/utils');
-const Constants = require('../src/utils/Constants');
+const Constants = require('../src/utils/constants');
 
 test('Status Code OK - Case undefined', () => {
       const result = Utils.responseStatus(undefined);
