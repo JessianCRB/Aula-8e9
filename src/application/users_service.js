@@ -4,12 +4,12 @@ const Utils = require('../utils/utils');
 const Constants = require('../utils/constants');
 const UsersRepository = require('../port/users_repository');
 const Constraints = require('../utils/users_validation');
-const validation = require('../utils/validation');
+const Validation = require('../utils/validation');
 
 const Users = {
     async create(data) {
         try {
-            const validation = validation.create(data);
+            const validation = Validation.create(data);
             if (validation) {
                 return validation;
             }

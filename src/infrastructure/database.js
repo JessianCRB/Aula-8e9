@@ -11,20 +11,17 @@ const { Schema } = mongoose;
 
 const UsersSchema = new Schema({
     id: {
-        type: String,
+        type: Number,
         index: true,
         unique: true,
     },
     nome: {
         type: String,
-        unique: true,
+        required: true,
     },
-    origem: {
-        type: String,
-        unique: true,
-    },
-    forca: String,
-    poder: String,
+    ano: Number,
+    NomeBanda: String,
+    genero: String,
 });
 
 const UsersModel = mongoose.model('UsersModel', UsersSchema);
